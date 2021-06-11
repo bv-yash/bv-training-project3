@@ -1,0 +1,12 @@
+<div>
+        <%= link_to 'Home', root_path %> |
+        <% unless controller_name == 'articles' && action_name == 'index' %>
+                <%= link_to 'Article', articles_path %> |
+        <% end %>        
+        <% if user_signed_in? %>
+                <%= link_to 'Logout', destroy_user_session_path, method: :DELETE %>
+        <% else %>
+                <%= link_to 'Login', new_user_session_path %>
+        <% end %>
+        <br> <br>
+</div>
