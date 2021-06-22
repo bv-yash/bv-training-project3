@@ -14,5 +14,4 @@ ActiveAdmin.register Article do
                 end
                 actions
         end
-
 end

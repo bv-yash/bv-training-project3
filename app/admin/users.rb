@@ -3,6 +3,7 @@ ActiveAdmin.register User do
 
         filter :email
         filter :id
+        
         show do
                 attributes_table do
                         row :email
